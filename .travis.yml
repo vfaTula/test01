@@ -6,8 +6,8 @@ php:
 services: 
   - mysql
 
+branches:
+  only: master
+
 env:
   - DB=mysql
-
-before_script:
-  - if [[ "$DB" == "mysql" ]]; then mysql -u root -e "create database IF NOT EXISTS test_01;"; fi
