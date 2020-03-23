@@ -1,0 +1,5 @@
+test:
+  database: test_01_01
+  username: root
+  password: root
+  encoding: utf8

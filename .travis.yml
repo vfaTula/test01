@@ -10,4 +10,4 @@ dist: trusty
 sudo: required
 
 before_script:
-  - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS test_01_01;" -uroot; fi
+  - if [[ "$DB" == "mysql" ]]; then /Applications/MAMP/Library/bin/mysql -u root -p root -e "create database IF NOT EXISTS test_01_01;" fi
